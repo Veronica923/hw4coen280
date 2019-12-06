@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data
+	xmlns:xsi="ttp://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespareSchemaLocation="https://github.com/Veronica923/hw4coen280/blob/master/data.xsd">
+
+
+	<STAFF>
+		<staffID>1</staffID>
+		<staffName>John Smith</staffName>
+		<staffEmail>JSmith@gmail.com</staffEmail>
+		<staffPhone>123-456-7890</staffPhone>
+		<title>Sales</title>
+		<salary>25001</salary>
+	</STAFF>
+
+	<STAFF>
+		<staffID>2</staffID>
+		<staffName>Xiaoming Wang</staffName>
+		<staffEmail>xWang@gmail.com</staffEmail>
+		<staffPhone>669-212-0123</staffPhone>
+		<title>Sales</title>
+		<salary>25001</salary>
+	</STAFF>
+
+	<STAFF>
+		<staffID>3</staffID>
+		<staffName>Shivangi Rao</staffName>
+		<staffEmail>sRao@gmail.com</staffEmail>
+		<staffPhone>314-435-0222</staffPhone>
+		<title>Sales</title>
+		<salary>25001</salary>
+	</STAFF>
+
+	<STAFF>
+		<staffID>4</staffID>
+		<staffName>Jeet Rao</staffName>
+		<staffEmail>jRao@gmail.com</staffEmail>
+		<staffPhone>123-456-0000</staffPhone>
+		<title>Sales</title>
+		<salary>25001</salary>
+	</STAFF>
+
+	<STAFF>
+		<staffID>5</staffID>
+		<staffName>Chelsea Li</staffName>
+		<staffEmail>cli@gmail.com</staffEmail>
+		<staffPhone>669-220-1233</staffPhone>
+		<title>Manager</title>
+		<salary>40000</salary>
+	</STAFF>
+	
+</data>

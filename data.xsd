@@ -1,0 +1,118 @@
+<xs:schema version="1.0"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified">
+
+	<xs:element name="staffID">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	
+	<xs:simpleType name="email">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([a-z0-9][-a-z0-9_\+\.]*[a-z0-9])@([a-z0-9][-a-z0-9\.]*[a-z0-9]\.(com|edu|org)" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="phoneNumber">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\s*\d{3}-\d{3}-\d{4}\s*" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="salary">
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="25000"/>
+			<xs:maxInclusive value="100000"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="STAFF">
+		<xs:comlexType>
+			<xs:sequence>
+				<xs:element ref="staffID" />
+				<xs:element name="staffName" type="xs:string" />
+				<xs:element name="staffEmail" type="email"/>
+				<xs:element name="staffPhone" type="phoneNumber" />
+				<xs:element name="title" type="xs:string" />
+				<xs:element name="salary" type="salary" />
+			</xs:sequence>
+		</xs:comlexType>
+	</xs:element>
+
+	<xs:element name="APPLICANT">
+		<xs:comlexType>
+			<xs:sequence>
+				<xs:element name="applicantID" type="xs:string" />
+				<xs:element name="applicantName" type="xs:string" />
+				<xs:element name="applicantEmail" type="email" />
+				<xs:element name="applicantPhone" type="phone" />
+				<xs:element name="DOB" type="xs:date" />
+				<xs:element ref="staffID" />
+			</xs:sequence>
+		</xs:comlexType>
+	</xs:element>
+
+	<xs:element name="applicants">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0"  maxOccurs="unbounded" ref="APPLICANT"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:simpleType name="location">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Campus Center"/>
+            <xs:enumeration value="Lawn"/>
+            <xs:enumeration value="Activities Center"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+	<xs:element name="EVENT">
+		<xs:comlexType>
+			<xs:sequence>
+				<xs:element name="eventID" type="xs:string" />
+				<xs:element name="description" type="xs:string" />
+				<xs:element name="location" type="location" />
+				<xs:element name="eventDate" type="xs:date" />
+			</xs:sequence>
+		</xs:comlexType>
+	</xs:element>
+	
+	<xs:element name="events">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0"  maxOccurs="unbounded" ref="EVENT"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="rating">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="ATTEND">
+		<xs:comlexType>
+			<xs:sequence>
+				<xs:element name="attendsID" type="xs:string" />
+				<xs:element ref="applicantID"/>
+				<xs:element ref="eventID" />
+				<xs:element name="rating" type="rating" />
+			</xs:sequence>
+		</xs:comlexType>
+	</xs:element>
+	
+	<xs:element name="attends">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0"  maxOccurs="unbounded" ref="ATTEND"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
