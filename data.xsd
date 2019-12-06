@@ -11,7 +11,7 @@
 	
 	<xs:simpleType name="email">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="([a-z0-9][-a-z0-9_\+\.]*[a-z0-9])@([a-z0-9][-a-z0-9\.]*[a-z0-9]\.(com|edu|org)" />
+			<xs:pattern value="([a-z0-9][-a-z0-9_\+\.]*[a-z0-9])@([a-z0-9][-a-z0-9\.]*[a-z0-9]\.(com|edu|org))" />
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -31,12 +31,12 @@
 	<xs:element name="STAFF">
 		<xs:comlexType>
 			<xs:sequence>
-				<xs:element ref="staffID" />
-				<xs:element name="staffName" type="xs:string" />
+				<xs:element ref="staffID"/>
+				<xs:element name="staffName" type="xs:string"/>
 				<xs:element name="staffEmail" type="email"/>
-				<xs:element name="staffPhone" type="phoneNumber" />
-				<xs:element name="title" type="xs:string" />
-				<xs:element name="salary" type="salary" />
+				<xs:element name="staffPhone" type="phoneNumber"/>
+				<xs:element name="title" type="xs:string"/>
+				<xs:element name="salary" type="salary"/>
 			</xs:sequence>
 		</xs:comlexType>
 	</xs:element>
