@@ -1,0 +1,46 @@
+
+<!DOCTYPE data [
+
+	<!ELEMENT STAFF (staffID,staffName,staffEmail,staffPhone+,title*,salary)>
+	<!ELEMENT staffID (#PCDATA)>
+	<!ELEMENT staffName (#PCDATA)>
+	<!ELEMENT staffEmail (#PCDATA)>
+	<!ELEMENT staffPhone (#PCDATA)>
+	<!ELEMENT title (#PCDATA)>
+	<!ELEMENT salary (#PCDATA)>
+
+	<!ATTLIST staffID sid ID #REQUIRED>
+
+
+	<!ELEMENT APPLICANT (applicantID,applicantName,applicantEmail+,applicantPhone+,DOB?,staffID)>
+	<!ELEMENT applicantID (#PCDATA)>
+	<!ELEMENT applicantName (#PCDATA)>
+	<!ELEMENT applicantEmail (#PCDATA)>
+	<!ELEMENT applicantPhone (#PCDATA)>
+	<!ELEMENT DOB (#PCDATA)>
+	<!ELEMENT staffID (#PCDATA)>
+
+	<!ATTLIST applicantID appcid ID #REQUIRED>
+	<!ATTLIST staffID sid IDREF #REQUIRED>
+
+
+	<!ELEMENT EVENT (eventID,description,location,eventDate)>	
+	<!ELEMENT eventID (#PCDATA)>
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT location (#PCDATA)>
+	<!ELEMENT eventDate (#PCDATA)>
+
+	<!ATTLIST eventID eid ID #REQUIRED>
+
+
+	<!ELEMENT ATTEND (attendsID,applicantID,eventID,rating)>
+	<!ELEMENT attendsID (#PCDATA)>
+	<!ELEMENT applicantID (#PCDATA)>
+	<!ELEMENT eventID (#PCDATA)>
+	<!ELEMENT rating (#PCDATA)>
+
+	<!ATTLIST applicantID appcid IDREF #REQUIRED>
+	<!ATTLIST eventID eid IDREF #REQUIRED>
+
+
+]>
