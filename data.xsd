@@ -1,5 +1,5 @@
 <xs:schema version="1.0"
-	xmlns:xs="https://www.w3.org/2001/XMLSchema"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	elementFormDefault="qualified">
 
 	<xs:element name="staffID">
@@ -11,7 +11,7 @@
 	
 	<xs:simpleType name="email">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="([a-z0-9][-a-z0-9_\+\.]*[a-z0-9])@([a-z0-9][-a-z0-9\.]*[a-z0-9]\.(com|edu|org))" />
+			<xs:pattern value="\S+@\S+\.(com|org|edu)?" />
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -29,29 +29,45 @@
 	</xs:simpleType>
 
 	<xs:element name="STAFF">
-		<xs:comlexType>
+		<xs:complexType>
 			<xs:sequence>
-				<xs:element ref="staffID"/>
-				<xs:element name="staffName" type="xs:string"/>
+				<xs:element ref="staffID" />
+				<xs:element name="staffName" type="xs:string" />
 				<xs:element name="staffEmail" type="email"/>
-				<xs:element name="staffPhone" type="phoneNumber"/>
-				<xs:element name="title" type="xs:string"/>
-				<xs:element name="salary" type="salary"/>
+				<xs:element name="staffPhone" type="phoneNumber" />
+				<xs:element name="title" type="xs:string" />
+				<xs:element name="salary" type="salary" />
 			</xs:sequence>
-		</xs:comlexType>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="STAFFS">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0"  maxOccurs="unbounded" ref="STAFF"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+	<xs:element name="applicantID">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
 	</xs:element>
 
 	<xs:element name="APPLICANT">
-		<xs:comlexType>
+		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="applicantID" type="xs:string" />
+				<xs:element ref="applicantID" />
 				<xs:element name="applicantName" type="xs:string" />
 				<xs:element name="applicantEmail" type="email" />
-				<xs:element name="applicantPhone" type="phone" />
+				<xs:element name="applicantPhone" type="phoneNumber" />
 				<xs:element name="DOB" type="xs:date" />
 				<xs:element ref="staffID" />
 			</xs:sequence>
-		</xs:comlexType>
+		</xs:complexType>
 	</xs:element>
 
 	<xs:element name="applicants">
@@ -71,15 +87,23 @@
         </xs:restriction>
     </xs:simpleType>
 
+
+	<xs:element name="eventID">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
 	<xs:element name="EVENT">
-		<xs:comlexType>
+		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="eventID" type="xs:string" />
+				<xs:element ref="eventID" />
 				<xs:element name="description" type="xs:string" />
 				<xs:element name="location" type="location" />
 				<xs:element name="eventDate" type="xs:date" />
 			</xs:sequence>
-		</xs:comlexType>
+		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="events">
@@ -97,15 +121,22 @@
 		</xs:restriction>
 	</xs:simpleType>
 
+	<xs:element name="attendsID">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+
 	<xs:element name="ATTEND">
-		<xs:comlexType>
+		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="attendsID" type="xs:string" />
+				<xs:element ref="attendsID" />
 				<xs:element ref="applicantID"/>
 				<xs:element ref="eventID" />
 				<xs:element name="rating" type="rating" />
 			</xs:sequence>
-		</xs:comlexType>
+		</xs:complexType>
 	</xs:element>
 	
 	<xs:element name="attends">
@@ -115,4 +146,16 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+            	<xs:element minOccurs="0"  maxOccurs="unbounded" ref="STAFFS"/> 
+				<xs:element minOccurs="0"  maxOccurs="unbounded" ref="applicants"/> 
+            	<xs:element minOccurs="0"  maxOccurs="unbounded" ref="events"/> 
+                <xs:element minOccurs="0"  maxOccurs="unbounded" ref="attends"/> 
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
 </xs:schema>

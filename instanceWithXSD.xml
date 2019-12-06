@@ -1,52 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data
-	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="https://github.com/Veronica923/hw4coen280/blob/master/data.xsd">
+<root
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="data.xsd">
+	<STAFFS>
+
+		<STAFF>
+			<staffID>1</staffID>
+			<staffName>John Smith</staffName>
+			<staffEmail>JSmith@gmail.com</staffEmail>
+			<staffPhone>123-456-7890</staffPhone>
+			<title>Sales</title>
+			<salary>25001</salary>
+		</STAFF>
+
+		<STAFF>
+			<staffID>2</staffID>
+			<staffName>Xiaoming Wang</staffName>
+			<staffEmail>xWang@gmail.com</staffEmail>
+			<staffPhone>669-212-0123</staffPhone>
+			<title>Sales</title>
+			<salary>25001</salary>
+		</STAFF>
+
+		<STAFF>
+			<staffID>3</staffID>
+			<staffName>Shivangi Rao</staffName>
+			<staffEmail>sRao@gmail.com</staffEmail>
+			<staffPhone>314-435-0222</staffPhone>
+			<title>Sales</title>
+			<salary>25001</salary>
+		</STAFF>
+
+		<STAFF>
+			<staffID>4</staffID>
+			<staffName>Jeet Rao</staffName>
+			<staffEmail>jRao@gmail.com</staffEmail>
+			<staffPhone>123-456-0000</staffPhone>
+			<title>Sales</title>
+			<salary>25001</salary>
+		</STAFF>
+
+		<STAFF>
+			<staffID>5</staffID>
+			<staffName>Chelsea Li</staffName>
+			<staffEmail>cli@gmail.com</staffEmail>
+			<staffPhone>669-220-1233</staffPhone>
+			<title>Manager</title>
+			<salary>40000</salary>
+		</STAFF>
+		
+	</STAFFS>
 
 
-	<STAFF>
-		<staffID>1</staffID>
-		<staffName>John Smith</staffName>
-		<staffEmail>JSmith@gmail.com</staffEmail>
-		<staffPhone>123-456-7890</staffPhone>
-		<title>Sales</title>
-		<salary>25001</salary>
-	</STAFF>
+	<applicants>
+		
+		<APPLICANT>
+			<applicantID>a1</applicantID>
+			<applicantName>Da Liu</applicantName>
+			<applicantEmail>dliu@gmail.com</applicantEmail>
+			<applicantPhone>669-222-0000</applicantPhone>
+			<DOB>1990-01-01</DOB>
+			<staffID>3</staffID>
+		</APPLICANT>
 
-	<STAFF>
-		<staffID>2</staffID>
-		<staffName>Xiaoming Wang</staffName>
-		<staffEmail>xWang@gmail.com</staffEmail>
-		<staffPhone>669-212-0123</staffPhone>
-		<title>Sales</title>
-		<salary>25001</salary>
-	</STAFF>
+		<APPLICANT>
+			<applicantID>a2</applicantID>
+			<applicantName>er Liu</applicantName>
+			<applicantEmail>eliu@gmail.com</applicantEmail>
+			<applicantPhone>669-222-0001</applicantPhone>
+			<DOB>1990-01-11</DOB>
+			<staffID>3</staffID>
+		</APPLICANT>
 
-	<STAFF>
-		<staffID>3</staffID>
-		<staffName>Shivangi Rao</staffName>
-		<staffEmail>sRao@gmail.com</staffEmail>
-		<staffPhone>314-435-0222</staffPhone>
-		<title>Sales</title>
-		<salary>25001</salary>
-	</STAFF>
+		<APPLICANT>
+			<applicantID>a3</applicantID>
+			<applicantName>San Liu</applicantName>
+			<applicantEmail>sliu@gmail.com</applicantEmail>
+			<applicantPhone>669-222-1000</applicantPhone>
+			<DOB>1990-01-03</DOB>
+			<staffID>1</staffID>
+		</APPLICANT>
 
-	<STAFF>
-		<staffID>4</staffID>
-		<staffName>Jeet Rao</staffName>
-		<staffEmail>jRao@gmail.com</staffEmail>
-		<staffPhone>123-456-0000</staffPhone>
-		<title>Sales</title>
-		<salary>25001</salary>
-	</STAFF>
+		<APPLICANT>
+			<applicantID>a4</applicantID>
+			<applicantName>Si Liu</applicantName>
+			<applicantEmail>sliu@gmail.com</applicantEmail>
+			<applicantPhone>669-222-0010</applicantPhone>
+			<DOB>1990-01-12</DOB>
+			<staffID>1</staffID>
+		</APPLICANT>	
 
-	<STAFF>
-		<staffID>5</staffID>
-		<staffName>Chelsea Li</staffName>
-		<staffEmail>cli@gmail.com</staffEmail>
-		<staffPhone>669-220-1233</staffPhone>
-		<title>Manager</title>
-		<salary>40000</salary>
-	</STAFF>
+		<APPLICANT>
+			<applicantID>a5</applicantID>
+			<applicantName>Wu Liu</applicantName>
+			<applicantEmail>wliu@gmail.com</applicantEmail>
+			<applicantPhone>669-222-1200</applicantPhone>
+			<DOB>1990-03-01</DOB>
+			<staffID>5</staffID>
+		</APPLICANT>
+
+		<APPLICANT>
+			<applicantID>a6</applicantID>
+			<applicantName>Liu Liu</applicantName>
+			<applicantEmail>lliu@gmail.com</applicantEmail>
+			<applicantPhone>669-222-0230</applicantPhone>
+			<DOB>1990-01-12</DOB>
+			<staffID>5</staffID>
+		</APPLICANT>	
+
+		<APPLICANT>
+			<applicantID>a7</applicantID>
+			<applicantName>Qi Liu</applicantName>
+			<applicantEmail>qliu@gmail.com</applicantEmail>
+			<applicantPhone>669-212-0000</applicantPhone>
+			<DOB>1990-07-01</DOB>
+			<staffID>2</staffID>
+		</APPLICANT>
+
+		<APPLICANT>
+			<applicantID>a8</applicantID>
+			<applicantName>Ba Liu</applicantName>
+			<applicantEmail>bliu@gmail.com</applicantEmail>
+			<applicantPhone>669-032-0000</applicantPhone>
+			<DOB>1990-08-01</DOB>
+			<staffID>2</staffID>
+		</APPLICANT>
+
+		<APPLICANT>
+			<applicantID>a9</applicantID>
+			<applicantName>Jiu Liu</applicantName>
+			<applicantEmail>jliu@gmail.com</applicantEmail>
+			<applicantPhone>669-222-0000</applicantPhone>
+			<DOB>1990-10-01</DOB>
+			<staffID>4</staffID>
+		</APPLICANT>
+
+		<APPLICANT>
+			<applicantID>a10</applicantID>
+			<applicantName>Shi Liu</applicantName>
+			<applicantEmail>sliu@gmail.com</applicantEmail>
+			<applicantPhone>668-222-0000</applicantPhone>
+			<DOB>1990-09-01</DOB>
+			<staffID>4</staffID>
+		</APPLICANT>
+	</applicants>
+
+
+	<events>
+		<EVENT>
+			<eventID>e1</eventID>
+			<description>GHC</description>
+			<location>Campus Center</location>
+			<eventDate>2020-03-29</eventDate>
+		</EVENT>
+
+		<EVENT>
+			<eventID>e2</eventID>
+			<description>Job Conference</description>
+			<location>Campus Center</location>
+			<eventDate>2020-10-28</eventDate>
+		</EVENT>
+
+		<EVENT>
+			<eventID>e3</eventID>
+			<description>Christmas Event</description>
+			<location>Campus Center</location>
+			<eventDate>2019-12-24</eventDate>
+		</EVENT>
+
+		<EVENT>
+			<eventID>e4</eventID>
+			<description>New Year's Eve</description>
+			<location>Campus Center</location>
+			<eventDate>2019-12-31</eventDate>
+		</EVENT>
+	</events>
 	
-</data>
+	<attends>
+		<ATTEND>
+			<attendsID>at1</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e1</eventID>
+			<rating>2</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at2</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e4</eventID>
+			<rating>9</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at3</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e4</eventID>
+			<rating>8</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at4</attendsID>
+			<applicantID>a10</applicantID>
+			<eventID>e4</eventID>
+			<rating>6</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at5</attendsID>
+			<applicantID>a9</applicantID>
+			<eventID>e3</eventID>
+			<rating>8</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at6</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e3</eventID>
+			<rating>2</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at7</attendsID>
+			<applicantID>a9</applicantID>
+			<eventID>e3</eventID>
+			<rating>7</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at8</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e1</eventID>
+			<rating>7</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at9</attendsID>
+			<applicantID>a9</applicantID>
+			<eventID>e3</eventID>
+			<rating>7</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at10</attendsID>
+			<applicantID>a10</applicantID>
+			<eventID>e2</eventID>
+			<rating>7</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at11</attendsID>
+			<applicantID>a6</applicantID>
+			<eventID>e2</eventID>
+			<rating>2</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at12</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e2</eventID>
+			<rating>2</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at13</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e2</eventID>
+			<rating>2</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at14</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e2</eventID>
+			<rating>10</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at15</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e1</eventID>
+			<rating>8</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at16</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e1</eventID>
+			<rating>4</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at17</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e1</eventID>
+			<rating>5</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at3</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e1</eventID>
+			<rating>2</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at18</attendsID>
+			<applicantID>a1</applicantID>
+			<eventID>e1</eventID>
+			<rating>2</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at19</attendsID>
+			<applicantID>a4</applicantID>
+			<eventID>e1</eventID>
+			<rating>2</rating>
+		</ATTEND>
+
+		<ATTEND>
+			<attendsID>at20</attendsID>
+			<applicantID>a8</applicantID>
+			<eventID>e3</eventID>
+			<rating>9</rating>
+		</ATTEND>
+
+	</attends>
+
+</root>

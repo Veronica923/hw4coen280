@@ -48,8 +48,269 @@
 		<salary>40000</salary>
 	</STAFF>
 
+	<APPLICANT appcid="a1" sid="3">
+		<applicantID>a1</applicantID>
+		<applicantName>Da Liu</applicantName>
+		<applicantEmail>dliu@gmail.com</applicantEmail>
+		<applicantPhone>669-222-0000</applicantPhone>
+		<DOB>1990-01-01</DOB>
+		<staffID>3</staffID>
+	</APPLICANT>
+
+	<APPLICANT appcid="a2" sid="3">
+		<applicantID>a2</applicantID>
+		<applicantName>er Liu</applicantName>
+		<applicantEmail>eliu@gmail.com</applicantEmail>
+		<applicantPhone>669-222-0001</applicantPhone>
+		<DOB>1990-01-11</DOB>
+		<staffID>3</staffID>
+	</APPLICANT>
+
+	<APPLICANT appcid="a3" sid="1">
+		<applicantID>a3</applicantID>
+		<applicantName>San Liu</applicantName>
+		<applicantEmail>sliu@gmail.com</applicantEmail>
+		<applicantPhone>669-222-1000</applicantPhone>
+		<DOB>1990-01-03</DOB>
+		<staffID>1</staffID>
+	</APPLICANT>
+
+	<APPLICANT appcid="a4" sid="1">
+		<applicantID>a4</applicantID>
+		<applicantName>Si Liu</applicantName>
+		<applicantEmail>sliu@gmail.com</applicantEmail>
+		<applicantPhone>669-222-0010</applicantPhone>
+		<DOB>1990-01-12</DOB>
+		<staffID>1</staffID>
+	</APPLICANT>	
+
+	<APPLICANT appcid="a5" sid="5">
+		<applicantID>a5</applicantID>
+		<applicantName>Wu Liu</applicantName>
+		<applicantEmail>wliu@gmail.com</applicantEmail>
+		<applicantPhone>669-222-1200</applicantPhone>
+		<DOB>1990-03-01</DOB>
+		<staffID>5</staffID>
+	</APPLICANT>
+
+	<APPLICANT appcid="a6" sid="5">
+		<applicantID>a6</applicantID>
+		<applicantName>Liu Liu</applicantName>
+		<applicantEmail>lliu@gmail.com</applicantEmail>
+		<applicantPhone>669-222-0230</applicantPhone>
+		<DOB>1990-01-12</DOB>
+		<staffID>5</staffID>
+	</APPLICANT>	
+
+	<APPLICANT appcid="a7" sid="2">
+		<applicantID>a7</applicantID>
+		<applicantName>Qi Liu</applicantName>
+		<applicantEmail>qliu@gmail.com</applicantEmail>
+		<applicantPhone>669-212-0000</applicantPhone>
+		<DOB>1990-07-01</DOB>
+		<staffID>2</staffID>
+	</APPLICANT>
+
+	<APPLICANT appcid="a8" sid="2">
+		<applicantID>a8</applicantID>
+		<applicantName>Ba Liu</applicantName>
+		<applicantEmail>bliu@gmail.com</applicantEmail>
+		<applicantPhone>669-032-0000</applicantPhone>
+		<DOB>1990-08-01</DOB>
+		<staffID>2</staffID>
+	</APPLICANT>
+
+	<APPLICANT appcid="a9" sid="4">
+		<applicantID>a9</applicantID>
+		<applicantName>Jiu Liu</applicantName>
+		<applicantEmail>jliu@gmail.com</applicantEmail>
+		<applicantPhone>669-222-0000</applicantPhone>
+		<DOB>1990-10-01</DOB>
+		<staffID>4</staffID>
+	</APPLICANT>
+
+	<APPLICANT appcid="a10" sid="4">
+		<applicantID>a10</applicantID>
+		<applicantName>Shi Liu</applicantName>
+		<applicantEmail>sliu@gmail.com</applicantEmail>
+		<applicantPhone>668-222-0000</applicantPhone>
+		<DOB>1990-09-01</DOB>
+		<staffID>4</staffID>
+	</APPLICANT>
+
+	<EVENT eid="e1">
+		<eventID>e1</eventID>
+		<description>GHC</description>
+		<location>Campus Center</location>
+		<eventDate>2020-03-29</eventDate>
+	</EVENT>
+
+	<EVENT eid="e2">
+		<eventID>e2</eventID>
+		<description>Job Conference</description>
+		<location>Campus Center</location>
+		<eventDate>2020-10-28</eventDate>
+	</EVENT>
+
+	<EVENT eid="e3">
+		<eventID>e3</eventID>
+		<description>Christmas Event</description>
+		<location>Campus Center</location>
+		<eventDate>2019-12-24</eventDate>
+	</EVENT>
+
+	<EVENT eid="e4">
+		<eventID>e4</eventID>
+		<description>New Year's Eve</description>
+		<location>Campus Center</location>
+		<eventDate>2019-12-31</eventDate>
+	</EVENT>
 
 
+	<ATTEND appcid="a1" eid="e1">
+		<attendsID>at1</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e1</eventID>
+		<rating>2</rating>
+	</ATTEND>
 
-	
+	<ATTEND appcid="a2" eid="e4">
+		<attendsID>at2</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e4</eventID>
+		<rating>9</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e4">
+		<attendsID>at3</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e4</eventID>
+		<rating>8</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a10" eid="e4">
+		<attendsID>at4</attendsID>
+		<applicantID>a10</applicantID>
+		<eventID>e4</eventID>
+		<rating>6</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a9" eid="e3">
+		<attendsID>at5</attendsID>
+		<applicantID>a9</applicantID>
+		<eventID>e3</eventID>
+		<rating>8</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e3">
+		<attendsID>at6</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e3</eventID>
+		<rating>2</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a9" eid="e3">
+		<attendsID>at7</attendsID>
+		<applicantID>a9</applicantID>
+		<eventID>e3</eventID>
+		<rating>7</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e1">
+		<attendsID>at8</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e1</eventID>
+		<rating>7</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a9" eid="e3">
+		<attendsID>at9</attendsID>
+		<applicantID>a9</applicantID>
+		<eventID>e3</eventID>
+		<rating>7</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a10" eid="e2">
+		<attendsID>at10</attendsID>
+		<applicantID>a10</applicantID>
+		<eventID>e2</eventID>
+		<rating>7</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a6" eid="e2">
+		<attendsID>at11</attendsID>
+		<applicantID>a6</applicantID>
+		<eventID>e2</eventID>
+		<rating>2</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e2">
+		<attendsID>at12</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e2</eventID>
+		<rating>2</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e2">
+		<attendsID>at13</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e2</eventID>
+		<rating>2</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e2">
+		<attendsID>at14</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e2</eventID>
+		<rating>10</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e1">
+		<attendsID>at15</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e1</eventID>
+		<rating>8</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e1">
+		<attendsID>at16</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e1</eventID>
+		<rating>4</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e1">
+		<attendsID>at17</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e1</eventID>
+		<rating>5</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e1">
+		<attendsID>at3</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e1</eventID>
+		<rating>2</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a4" eid="e1">
+		<attendsID>at18</attendsID>
+		<applicantID>a1</applicantID>
+		<eventID>e1</eventID>
+		<rating>2</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a1" eid="e1">
+		<attendsID>at19</attendsID>
+		<applicantID>a4</applicantID>
+		<eventID>e1</eventID>
+		<rating>2</rating>
+	</ATTEND>
+
+	<ATTEND appcid="a8" eid="e3">
+		<attendsID>at20</attendsID>
+		<applicantID>a8</applicantID>
+		<eventID>e3</eventID>
+		<rating>9</rating>
+	</ATTEND>
 </data>

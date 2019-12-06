@@ -42,5 +42,4 @@
 	<!ATTLIST applicantID appcid IDREF #REQUIRED>
 	<!ATTLIST eventID eid IDREF #REQUIRED>
 
-
 ]>
