@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data
-	xmlns:xsi="ttp://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespareSchemaLocation="https://github.com/Veronica923/hw4coen280/blob/master/data.xsd">
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://github.com/Veronica923/hw4coen280/blob/master/data.xsd">
 
 
 	<STAFF>
